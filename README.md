@@ -7,6 +7,13 @@ sudo apt-get install python-rpi.gpio python3-rpi.gpio
 sudo apt-get install python-pip python3-pip
 
 pip install python-uinput
+
+sudo apt-get install scons
+git clone https://github.com/jgarff/rpi_ws281x.git
+cd rpi_ws281x
+scons
+cd python
+sudo python setup.py install
 ```
 
 ## Running
