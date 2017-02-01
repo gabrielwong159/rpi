@@ -9,7 +9,7 @@ sudo apt-get install python-pip python3-pip
 pip install python-uinput
 
 sudo apt-get install scons
-git clone https://github.com/jgarff/rpi_ws281x.git
+git clone https://github.com/tonydew/rpi_ws281x.git
 cd rpi_ws281x
 scons
 cd python

@@ -1,3 +1,7 @@
+# note that PWM pins are required for neopixels
+# PWM0 - GPIO 12,18
+# PWM1 - GPIO 13,19
+
 import time
 from neopixel import *
 
