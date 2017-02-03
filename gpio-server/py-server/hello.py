@@ -14,7 +14,7 @@ import neopixel
 LED_COUNT = 60
 LED_PIN = 18
 LED_BRIGHTNESS = 63
-strip = neopixel.Adafruit_NeoPixel(LED_COUNT, LED_STRIP)
+strip = neopixel.Adafruit_NeoPixel(LED_COUNT, LED_PIN)
 strip.setBrightness(LED_BRIGHTNESS)
 strip.begin()
 strip.show()
