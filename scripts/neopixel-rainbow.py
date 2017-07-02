@@ -1,3 +1,5 @@
+# example use of neopixel library to create moving rainbow effect
+
 # note that PWM pins are required for neopixels
 # PWM0 - GPIO 12,18
 # PWM1 - GPIO 13,19
@@ -9,6 +11,7 @@ NUM_PIXELS = 60
 LED_PIN = 18
 BRIGHTNESS = 255
 
+# setPixelColor takes in a Color object as a parameter, hence the need for conversion
 def rgb(r=0,g=0,b=0):
         return Color(g,r,b)
 

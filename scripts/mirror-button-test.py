@@ -1,3 +1,5 @@
+# testing GPIO pin numbering on smart mirror to ensure that the keys correspond
+
 import time
 import uinput
 
