@@ -2,12 +2,19 @@
 Reference codes for controlling GPIO pins on Raspberry Pi using Python
 
 ## Installing necessary files
+#### Basic installation
 ```
 sudo apt-get install python-rpi.gpio python3-rpi.gpio
 sudo apt-get install python-pip python3-pip
+```
 
+#### Installing keyboard input library
+```
 pip install python-uinput
+```
 
+#### Installing WS2812 LED library
+```
 sudo apt-get install scons swig
 git clone https://github.com/tonydew/rpi_ws281x.git
 cd rpi_ws281x
