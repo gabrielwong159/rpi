@@ -1,3 +1,6 @@
+## arduino-serial
+Communicating via Arduino USB Serial
+
 ## blink-led
 Simple single LED blink
 
