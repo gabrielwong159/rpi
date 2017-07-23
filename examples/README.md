@@ -3,14 +3,18 @@ Communicating via Arduino USB Serial
 
 ## azure_sql
 Accessing Azure hosted SQL server using PyODBC
-```sudo apt-get install freetds-dev freetds-bin unixodbc-dev tdsodbc
-pip install pyodbc```
+```
+sudo apt-get install freetds-dev freetds-bin unixodbc-dev tdsodbc
+pip install pyodbc
+```
 
-In ```/etc/odbcinst.ini```:
-```[FreeTDS]
+In `/etc/odbcinst.ini`:
+```
+[FreeTDS]
 Description=FreeTDS Driver
 Driver=/usr/lib/arm-linux-gnueabihf/odbc/libtdsodbc.so
-Setup=/usr/lib/arm-linux-gnueabihf/odbc/libtdsS.so```
+Setup=/usr/lib/arm-linux-gnueabihf/odbc/libtdsS.so
+```
 [Source](https://gist.github.com/rduplain/1293636)
 
 ## blink_led
