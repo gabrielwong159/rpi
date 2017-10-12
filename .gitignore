@@ -1,3 +1,3 @@
-examples/cloud_database/__pycache__
-examples/cloud_database/azure_sql_config.py
-examples/cloud_database/firebase_config.py
+cloud_database/__pycache__
+cloud_database/azure_sql_config.py
+cloud_database/firebase_config.py

@@ -1,9 +1,2 @@
-# Using GPIO pins on Raspberry Pi
-Reference codes for controlling GPIO pins on Raspberry Pi using Python
-
-## Installing necessary files
-#### Basic installation
-```
-sudo apt-get install python-rpi.gpio python3-rpi.gpio
-sudo apt-get install python-pip python3-pip
-```
+# Raspberry Pi Library
+A collection of all materials related to Raspberry Pi. Includes snippets for several common purposes on the Raspberry Pi. Most of these snippets are written in Python.

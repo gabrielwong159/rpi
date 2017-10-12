@@ -41,10 +41,10 @@ def led():
 
 @app.route("/neopixel")
 def neop():
-	for i in range(LED_COUNT):
-		strip.setPixelColor(i, BLUE)
-	strip.show()
-	return 'pew'
+        for i in range(LED_COUNT):
+                strip.setPixelColor(i, BLUE)
+        strip.show()
+        return 'pew'
 
 @app.route("/write")
 def write():
