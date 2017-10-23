@@ -1,0 +1,42 @@
+For Voice Control
+1. Install PyAudio 0.2.11 python -m pip install pyaudio
+2. Connect USB Microphone
+3. Install SpeechRecognition pip install SpeechRecognition
+4. Edit microphone settings using alsamixer on command prompt; go to microphone setting, reduce dB boost if too distorted
+	Footnote: Test microphone settings with alsamixer.
+5. Use cmd arecord -f S16_LE -r 48000 -D hw:1,0 -d 5 test.wav -v <-- verbose shows Mic frequency, mic channels, etc.
+6. cmd arecord records audio files, cmd aplay plays .wav files. RPi has headphone jack. Use cmd amixer cset numid=3 2 for HDMI output, amixer cset numid=3 1 for Headphone output. 
+7. Run the base speech recognition command: python -m speech_recognition
+8. For Pocketsphinx: sudo apt-get install libpulse-dev
+9. sudo apt-get install pocketsphinx
+
+For EDUROAM WiFi connectivity (essential for SSH-ing in school!):
+type this into the bottom of your /etc/wpa_supplicant/wpa_supplicant.conf (use nano/vim/vi/leafpad)
+network={
+	ssid="eduroam"
+	priority=1
+	proto=RSN
+	key_mgmt=WPA-EAP
+	pairwise=CCMP
+	auth_alg=OPEN
+	eap=PEAP
+	identity="1002___@mymail.sutd.edu.sg"
+	password="yOuRpAsSwOrDhErE"
+	phase2="auth=MSCHAPV2"
+}
+
+For REMOTE DESKTOP CONTROL:
+1. sudo apt-get install -y tightvncserver
+2. sudo apt install -y xrdp
+3. cmd ifconfig to check your local IP; ensure both your RPi and your computer are connected to either SUTD_STUDENT or eduroam
+4. Open "Remote Desktop Connection" on your laptop; RDP into the Raspberry Pi's ifconfig.
+
+For RPi Camera Streaming:
+1. git clone https://github.com/silvanmelchior/RPi_Cam_Web_Interface.git
+2. cd RPi_Cam_Web_Interface
+3. ./install.sh
+4. Insert your camera into the CAMERA ribbon cable sort on the Raspberry Pi (NOT the MONITOR ribbon!)
+
+For STARTUP Programs:
+1. Edit .bashrc or rc.local
+2. Generate Shell Scripts
