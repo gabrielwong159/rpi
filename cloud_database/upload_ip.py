@@ -1,5 +1,5 @@
-# required python packages: netifaces, python-firebase
-
+#!/usr/bin/python3
+# put in /etc/rc.local
 import netifaces as ni
 from firebase import firebase
 from firebase_config import *
@@ -26,5 +26,5 @@ def put_ip_addresses(name):
         firebase.put(DEVICE_NAME, k, v)
     print("All IP addresses of {} uploaded".format(name))
 
-#put_ip_addresses(DEVICE_NAME)
+put_ip_addresses(DEVICE_NAME)
 #d = firebase.get(DEVICE_NAME, None)
